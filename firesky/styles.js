@@ -16,7 +16,7 @@ let styles = StyleSheet.create({
     marginTop: 200,
     marginBottom: 200,
     fontSize: 40,
-    letterSpacing: 3,
+    letterSpacing: 10,
     color: 'white',
     backgroundColor: 'transparent'
   },
@@ -28,7 +28,7 @@ let styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#FF5722',
     height: 40,
-    width: 100,
+    width: 150,
     
   },
   searchButtonText: {
