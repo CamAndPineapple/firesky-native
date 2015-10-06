@@ -21,7 +21,7 @@
     "unused": true,
 
     //Avoid the 'React could not be found' error, also ignore $ error if you use jquery
-    "globals": { 
+    "globals": {
         "React": false,
         "$": false
     }

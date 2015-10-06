@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react-native');
-var RootNav = require('./root.ios');
+var MainTitle = require('./MainTitle.ios');
 
 var {
   AppRegistry,
@@ -16,7 +16,7 @@ var firesky = React.createClass({
                  style={styles.container}
                  initialRoute={{
              title: 'Search',
-             component: RootNav
+             component: MainTitle
          }}/>
     );
   }

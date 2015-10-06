@@ -1,0 +1,508 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'eslint',
+1 verbose cli   'babel-eslint' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'eslint', null ]
+7 verbose cache add spec eslint
+8 silly cache add args [ 'babel-eslint', null ]
+9 verbose cache add spec babel-eslint
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'eslint',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'eslint',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 silly addNamed eslint@*
+12 verbose addNamed "*" is a valid semver range for eslint
+13 silly addNameRange { name: 'eslint', range: '*', hasData: false }
+14 silly mapToRegistry name eslint
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/eslint
+18 verbose addNameRange registry:https://registry.npmjs.org/eslint not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'babel-eslint',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'babel-eslint',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: '*',
+19 silly cache add   type: 'range' }
+20 silly addNamed babel-eslint@*
+21 verbose addNamed "*" is a valid semver range for babel-eslint
+22 silly addNameRange { name: 'babel-eslint', range: '*', hasData: false }
+23 silly mapToRegistry name babel-eslint
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/babel-eslint
+27 verbose addNameRange registry:https://registry.npmjs.org/babel-eslint not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/eslint
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 6:02:22 PM
+31 verbose request id 848201626af6ec7c
+32 verbose etag "10TNTEYVGF0PYSEA04L2DHGUX"
+33 http request GET https://registry.npmjs.org/eslint
+34 verbose request uri https://registry.npmjs.org/babel-eslint
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 6:02:22 PM
+37 verbose etag "3S4O251NNBGYI53ZDSDQ9HXIB"
+38 http request GET https://registry.npmjs.org/babel-eslint
+39 http 200 https://registry.npmjs.org/babel-eslint
+40 silly get cb [ 200,
+40 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 silly get     etag: '"E1ZOU524EGQSDIOT75FWIOC58"',
+40 silly get     'content-type': 'application/json',
+40 silly get     'cache-control': 'max-age=60',
+40 silly get     'content-length': '81814',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Tue, 06 Oct 2015 22:02:22 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '20',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-jfk1024-JFK',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '1',
+40 silly get     'x-timer': 'S1444168942.638176,VS0,VE1',
+40 silly get     vary: 'Accept' } ]
+41 verbose get saving babel-eslint to /Users/MyDrive/.npm/registry.npmjs.org/babel-eslint/.cache.json
+42 silly addNameRange number 2 { name: 'babel-eslint', range: '*', hasData: true }
+43 silly addNameRange versions [ 'babel-eslint',
+43 silly addNameRange   [ '1.0.0',
+43 silly addNameRange     '1.0.1',
+43 silly addNameRange     '1.0.2',
+43 silly addNameRange     '1.0.3',
+43 silly addNameRange     '1.0.4',
+43 silly addNameRange     '1.0.6',
+43 silly addNameRange     '1.0.7',
+43 silly addNameRange     '1.0.8',
+43 silly addNameRange     '1.0.9',
+43 silly addNameRange     '1.0.10',
+43 silly addNameRange     '1.0.11',
+43 silly addNameRange     '1.0.12',
+43 silly addNameRange     '1.0.13',
+43 silly addNameRange     '1.0.14',
+43 silly addNameRange     '2.0.0',
+43 silly addNameRange     '2.0.2',
+43 silly addNameRange     '3.0.0',
+43 silly addNameRange     '3.0.1',
+43 silly addNameRange     '3.1.0',
+43 silly addNameRange     '3.1.1',
+43 silly addNameRange     '3.1.3',
+43 silly addNameRange     '3.1.4',
+43 silly addNameRange     '3.1.5',
+43 silly addNameRange     '3.1.6',
+43 silly addNameRange     '3.1.7',
+43 silly addNameRange     '3.1.8',
+43 silly addNameRange     '3.1.9',
+43 silly addNameRange     '3.1.10',
+43 silly addNameRange     '3.1.11',
+43 silly addNameRange     '3.1.12',
+43 silly addNameRange     '3.1.13',
+43 silly addNameRange     '3.1.14',
+43 silly addNameRange     '3.1.15',
+43 silly addNameRange     '3.1.16',
+43 silly addNameRange     '3.1.17',
+43 silly addNameRange     '3.1.18',
+43 silly addNameRange     '3.1.19',
+43 silly addNameRange     '3.1.20',
+43 silly addNameRange     '3.1.21',
+43 silly addNameRange     '3.1.22',
+43 silly addNameRange     '3.1.23',
+43 silly addNameRange     '3.1.24',
+43 silly addNameRange     '3.1.25',
+43 silly addNameRange     '3.1.26',
+43 silly addNameRange     '3.1.27',
+43 silly addNameRange     '4.0.0',
+43 silly addNameRange     '4.0.1',
+43 silly addNameRange     '4.0.2',
+43 silly addNameRange     '3.1.28',
+43 silly addNameRange     '4.0.3',
+43 silly addNameRange     '3.1.29',
+43 silly addNameRange     '4.0.4',
+43 silly addNameRange     '3.1.30',
+43 silly addNameRange     '4.0.5',
+43 silly addNameRange     '4.0.6',
+43 silly addNameRange     '4.0.7',
+43 silly addNameRange     '4.0.8',
+43 silly addNameRange     '4.0.9',
+43 silly addNameRange     '4.0.10',
+43 silly addNameRange     '4.1.0',
+43 silly addNameRange     '4.1.1',
+43 silly addNameRange     '4.1.2',
+43 silly addNameRange     '4.1.3' ] ]
+44 silly addNamed babel-eslint@4.1.3
+45 verbose addNamed "4.1.3" is a plain semver version for babel-eslint
+46 silly mapToRegistry name babel-eslint
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/babel-eslint
+50 verbose addRemoteTarball https://registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz not in flight; adding
+51 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz',
+51 verbose addRemoteTarball   '021d3e060b77f98e695c33cf5aba3b0ead2bd496' ]
+52 http 200 https://registry.npmjs.org/eslint
+53 silly get cb [ 200,
+53 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+53 silly get     etag: '"1P8EL3FDT62C0SUSLGDQO7F3F"',
+53 silly get     'content-type': 'application/json',
+53 silly get     'cache-control': 'max-age=60',
+53 silly get     'content-length': '184020',
+53 silly get     'accept-ranges': 'bytes',
+53 silly get     date: 'Tue, 06 Oct 2015 22:02:22 GMT',
+53 silly get     via: '1.1 varnish',
+53 silly get     age: '32',
+53 silly get     connection: 'keep-alive',
+53 silly get     'x-served-by': 'cache-jfk1034-JFK',
+53 silly get     'x-cache': 'HIT',
+53 silly get     'x-cache-hits': '2',
+53 silly get     'x-timer': 'S1444168942.623826,VS0,VE0',
+53 silly get     vary: 'Accept' } ]
+54 verbose get saving eslint to /Users/MyDrive/.npm/registry.npmjs.org/eslint/.cache.json
+55 info retry fetch attempt 1 at 6:02:22 PM
+56 info attempt registry request try #1 at 6:02:22 PM
+57 http fetch GET https://registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz
+58 silly addNameRange number 2 { name: 'eslint', range: '*', hasData: true }
+59 silly addNameRange versions [ 'eslint',
+59 silly addNameRange   [ '0.0.4',
+59 silly addNameRange     '0.0.5',
+59 silly addNameRange     '0.0.6',
+59 silly addNameRange     '0.0.7',
+59 silly addNameRange     '0.1.0-dev',
+59 silly addNameRange     '0.1.0',
+59 silly addNameRange     '0.1.1',
+59 silly addNameRange     '0.1.2',
+59 silly addNameRange     '0.1.3',
+59 silly addNameRange     '0.1.4',
+59 silly addNameRange     '0.2.0',
+59 silly addNameRange     '0.3.0',
+59 silly addNameRange     '0.4.0',
+59 silly addNameRange     '0.4.1',
+59 silly addNameRange     '0.4.2',
+59 silly addNameRange     '0.4.3',
+59 silly addNameRange     '0.4.4',
+59 silly addNameRange     '0.4.5',
+59 silly addNameRange     '0.5.0',
+59 silly addNameRange     '0.5.1',
+59 silly addNameRange     '0.6.0',
+59 silly addNameRange     '0.6.1',
+59 silly addNameRange     '0.6.2',
+59 silly addNameRange     '0.7.1',
+59 silly addNameRange     '0.7.2',
+59 silly addNameRange     '0.7.3',
+59 silly addNameRange     '0.7.4',
+59 silly addNameRange     '0.8.0',
+59 silly addNameRange     '0.8.1',
+59 silly addNameRange     '0.8.2',
+59 silly addNameRange     '0.9.0',
+59 silly addNameRange     '0.9.1',
+59 silly addNameRange     '0.9.2',
+59 silly addNameRange     '0.10.0-alpha',
+59 silly addNameRange     '0.10.0-alpha.1',
+59 silly addNameRange     '0.10.0-alpha.2',
+59 silly addNameRange     '0.10.0',
+59 silly addNameRange     '0.11.0-alpha.0',
+59 silly addNameRange     '0.10.1',
+59 silly addNameRange     '0.10.2',
+59 silly addNameRange     '0.11.0',
+59 silly addNameRange     '0.12.0',
+59 silly addNameRange     '0.13.0',
+59 silly addNameRange     '0.14.0',
+59 silly addNameRange     '0.14.1',
+59 silly addNameRange     '0.15.0',
+59 silly addNameRange     '0.15.1',
+59 silly addNameRange     '0.16.0',
+59 silly addNameRange     '0.16.1',
+59 silly addNameRange     '0.16.2',
+59 silly addNameRange     '0.17.0',
+59 silly addNameRange     '0.17.1',
+59 silly addNameRange     '0.18.0',
+59 silly addNameRange     '0.19.0',
+59 silly addNameRange     '0.20.0',
+59 silly addNameRange     '0.21.0',
+59 silly addNameRange     '0.21.1',
+59 silly addNameRange     '0.21.2',
+59 silly addNameRange     '0.22.0',
+59 silly addNameRange     '0.22.1',
+59 silly addNameRange     '0.23.0',
+59 silly addNameRange     '0.24.0',
+59 silly addNameRange     '0.24.1',
+59 silly addNameRange     '1.0.0-rc-1',
+59 silly addNameRange     '1.0.0-rc-2',
+59 silly addNameRange     '1.0.0-rc-3',
+59 silly addNameRange     '1.0.0',
+59 silly addNameRange     '1.1.0',
+59 silly addNameRange     '1.2.0',
+59 silly addNameRange     '1.2.1',
+59 silly addNameRange     '1.3.0',
+59 silly addNameRange     '1.3.1',
+59 silly addNameRange     '1.4.0',
+59 silly addNameRange     '1.4.1',
+59 silly addNameRange     '1.4.2',
+59 silly addNameRange     '1.4.3',
+59 silly addNameRange     '1.5.0',
+59 silly addNameRange     '1.5.1',
+59 silly addNameRange     '1.6.0' ] ]
+60 silly addNamed eslint@1.6.0
+61 verbose addNamed "1.6.0" is a plain semver version for eslint
+62 silly mapToRegistry name eslint
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/eslint
+66 verbose addRemoteTarball https://registry.npmjs.org/eslint/-/eslint-1.6.0.tgz not in flight; adding
+67 verbose addRemoteTarball [ 'https://registry.npmjs.org/eslint/-/eslint-1.6.0.tgz',
+67 verbose addRemoteTarball   '108a2d5ccb5a218cf7270f256cc2962518fa0c96' ]
+68 info retry fetch attempt 1 at 6:02:22 PM
+69 info attempt registry request try #1 at 6:02:22 PM
+70 http fetch GET https://registry.npmjs.org/eslint/-/eslint-1.6.0.tgz
+71 http fetch 200 https://registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz
+72 http fetch 200 https://registry.npmjs.org/eslint/-/eslint-1.6.0.tgz
+73 silly fetchAndShaCheck shasum 021d3e060b77f98e695c33cf5aba3b0ead2bd496
+74 verbose addTmpTarball /var/folders/_w/40d0_3zn3j755gmtqpnb7x800000gn/T/npm-11632-307d2513/registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz not in flight; adding
+75 verbose addTmpTarball already have metadata; skipping unpack for babel-eslint@4.1.3
+76 silly cache afterAdd babel-eslint@4.1.3
+77 verbose afterAdd /Users/MyDrive/.npm/babel-eslint/4.1.3/package/package.json not in flight; writing
+78 verbose afterAdd /Users/MyDrive/.npm/babel-eslint/4.1.3/package/package.json written
+79 silly fetchAndShaCheck shasum 108a2d5ccb5a218cf7270f256cc2962518fa0c96
+80 verbose addTmpTarball /var/folders/_w/40d0_3zn3j755gmtqpnb7x800000gn/T/npm-11632-307d2513/registry.npmjs.org/eslint/-/eslint-1.6.0.tgz not in flight; adding
+81 verbose addTmpTarball already have metadata; skipping unpack for eslint@1.6.0
+82 silly cache afterAdd eslint@1.6.0
+83 verbose afterAdd /Users/MyDrive/.npm/eslint/1.6.0/package/package.json not in flight; writing
+84 verbose afterAdd /Users/MyDrive/.npm/eslint/1.6.0/package/package.json written
+85 silly install resolved [ { name: 'babel-eslint',
+85 silly install resolved     version: '4.1.3',
+85 silly install resolved     description: '**babel-eslint** allows you to lint **ALL** valid Babel code with the fantastic [ESLint](https://github.com/eslint/eslint).',
+85 silly install resolved     main: 'index.js',
+85 silly install resolved     repository:
+85 silly install resolved      { type: 'git',
+85 silly install resolved        url: 'git+https://github.com/babel/babel-eslint.git' },
+85 silly install resolved     dependencies:
+85 silly install resolved      { 'babel-core': '^5.8.23',
+85 silly install resolved        'lodash.assign': '^3.0.0',
+85 silly install resolved        'lodash.pick': '^3.1.0',
+85 silly install resolved        'acorn-to-esprima': '^1.0.2' },
+85 silly install resolved     scripts:
+85 silly install resolved      { bootstrap: 'git submodule update --init && cd eslint && npm install',
+85 silly install resolved        eslint: 'cd eslint && mocha -c tests/lib/rules/*.js -r ../eslint-tester.js',
+85 silly install resolved        test: 'mocha',
+85 silly install resolved        lint: './node_modules/eslint/bin/eslint.js ./test index.js acorn-to-esprima.js' },
+85 silly install resolved     author: { name: 'Sebastian McKenzie', email: 'sebmck@gmail.com' },
+85 silly install resolved     license: 'MIT',
+85 silly install resolved     bugs: { url: 'https://github.com/babel/babel-eslint/issues' },
+85 silly install resolved     homepage: 'https://github.com/babel/babel-eslint',
+85 silly install resolved     devDependencies: { eslint: '^1.3.1', espree: '^2.2.4', mocha: '^2.2.5' },
+85 silly install resolved     gitHead: 'd8b3a81ba5b8a37fff28640fa18945e6031e3e41',
+85 silly install resolved     _id: 'babel-eslint@4.1.3',
+85 silly install resolved     _shasum: '021d3e060b77f98e695c33cf5aba3b0ead2bd496',
+85 silly install resolved     _from: 'babel-eslint@*',
+85 silly install resolved     _npmVersion: '2.13.1',
+85 silly install resolved     _nodeVersion: '0.12.7',
+85 silly install resolved     _npmUser: { name: 'hzoo', email: 'hi@henryzoo.com' },
+85 silly install resolved     dist:
+85 silly install resolved      { shasum: '021d3e060b77f98e695c33cf5aba3b0ead2bd496',
+85 silly install resolved        tarball: 'http://registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz' },
+85 silly install resolved     maintainers: [ [Object], [Object] ],
+85 silly install resolved     directories: {},
+85 silly install resolved     _resolved: 'https://registry.npmjs.org/babel-eslint/-/babel-eslint-4.1.3.tgz' },
+85 silly install resolved   { name: 'eslint',
+85 silly install resolved     version: '1.6.0',
+85 silly install resolved     author:
+85 silly install resolved      { name: 'Nicholas C. Zakas',
+85 silly install resolved        email: 'nicholas+npm@nczconsulting.com' },
+85 silly install resolved     description: 'An AST-based pattern checker for JavaScript.',
+85 silly install resolved     bin: { eslint: './bin/eslint.js' },
+85 silly install resolved     main: './lib/api.js',
+85 silly install resolved     scripts:
+85 silly install resolved      { test: 'node Makefile.js test',
+85 silly install resolved        lint: 'node Makefile.js lint',
+85 silly install resolved        patch: 'node Makefile.js patch',
+85 silly install resolved        minor: 'node Makefile.js minor',
+85 silly install resolved        major: 'node Makefile.js major',
+85 silly install resolved        docs: 'node Makefile.js docs',
+85 silly install resolved        gensite: 'node Makefile.js gensite',
+85 silly install resolved        browserify: 'node Makefile.js browserify',
+85 silly install resolved        perf: 'node Makefile.js perf',
+85 silly install resolved        profile: 'beefy tests/bench/bench.js --open -- -t brfs -t ./tests/bench/xform-rules.js -r espree',
+85 silly install resolved        coveralls: 'cat ./coverage/lcov.info | coveralls',
+85 silly install resolved        'check-commit': 'node Makefile.js checkGitCommit' },
+85 silly install resolved     files: [ 'LICENSE', 'README.md', 'bin', 'conf', 'lib' ],
+85 silly install resolved     repository: { type: 'git', url: 'https://github.com/eslint/eslint' },
+85 silly install resolved     homepage: 'http://eslint.org',
+85 silly install resolved     bugs: { url: 'https://github.com/eslint/eslint/issues/' },
+85 silly install resolved     dependencies:
+85 silly install resolved      { chalk: '^1.0.0',
+85 silly install resolved        'concat-stream': '^1.4.6',
+85 silly install resolved        debug: '^2.1.1',
+85 silly install resolved        doctrine: '^0.7.0',
+85 silly install resolved        'escape-string-regexp': '^1.0.2',
+85 silly install resolved        escope: '^3.2.0',
+85 silly install resolved        espree: '^2.2.4',
+85 silly install resolved        estraverse: '^4.1.0',
+85 silly install resolved        'estraverse-fb': '^1.3.1',
+85 silly install resolved        esutils: '^2.0.2',
+85 silly install resolved        'file-entry-cache': '^1.1.1',
+85 silly install resolved        glob: '^5.0.14',
+85 silly install resolved        globals: '^8.10.0',
+85 silly install resolved        handlebars: '^4.0.0',
+85 silly install resolved        inquirer: '^0.9.0',
+85 silly install resolved        'is-my-json-valid': '^2.10.0',
+85 silly install resolved        'is-resolvable': '^1.0.0',
+85 silly install resolved        'js-yaml': '^3.2.5',
+85 silly install resolved        'json-stable-stringify': '^1.0.0',
+85 silly install resolved        'lodash.clonedeep': '^3.0.1',
+85 silly install resolved        'lodash.merge': '^3.3.2',
+85 silly install resolved        'lodash.omit': '^3.1.0',
+85 silly install resolved        minimatch: '^2.0.1',
+85 silly install resolved        mkdirp: '^0.5.0',
+85 silly install resolved        'object-assign': '^2.0.0',
+85 silly install resolved        optionator: '^0.5.0',
+85 silly install resolved        'path-is-absolute': '^1.0.0',
+85 silly install resolved        'path-is-inside': '^1.0.1',
+85 silly install resolved        shelljs: '^0.3.0',
+85 silly install resolved        'strip-json-comments': '~1.0.1',
+85 silly install resolved        'text-table': '~0.2.0',
+85 silly install resolved        'to-double-quotes': '^1.0.1',
+85 silly install resolved        'to-single-quotes': '^1.0.3',
+85 silly install resolved        'user-home': '^1.0.0',
+85 silly install resolved        'xml-escape': '~1.0.0' },
+85 silly install resolved     devDependencies:
+85 silly install resolved      { beefy: '^1.0.0',
+85 silly install resolved        brfs: '0.0.9',
+85 silly install resolved        browserify: '^8.1.3',
+85 silly install resolved        chai: '^1.9.1',
+85 silly install resolved        cheerio: '^0.19.0',
+85 silly install resolved        coveralls: '2.11.2',
+85 silly install resolved        dateformat: '^1.0.8',
+85 silly install resolved        ejs: '^2.3.3',
+85 silly install resolved        esprima: '^2.4.1',
+85 silly install resolved        'esprima-fb': '^10001.1.0-dev-harmony-fb',
+85 silly install resolved        'gh-got': '^1.0.3',
+85 silly install resolved        istanbul: '^0.3.5',
+85 silly install resolved        jsdoc: '^3.3.0-beta1',
+85 silly install resolved        jsonlint: '^1.6.2',
+85 silly install resolved        leche: '^2.1.1',
+85 silly install resolved        linefix: '^0.1.1',
+85 silly install resolved        'load-perf': '^0.2.0',
+85 silly install resolved        markdownlint: '^0.0.8',
+85 silly install resolved        mocha: '^2.1.0',
+85 silly install resolved        'mocha-phantomjs': '3.6.0',
+85 silly install resolved        'npm-license': '^0.2.3',
+85 silly install resolved        phantomjs: '1.9.7-15',
+85 silly install resolved        proxyquire: '^1.0.0',
+85 silly install resolved        rewire: '^2.3.4',
+85 silly install resolved        semver: '^4.1.0',
+85 silly install resolved        'shelljs-nodecli': '~0.1.0',
+85 silly install resolved        sinon: '1.14.1',
+85 silly install resolved        through: '^2.3.6' },
+85 silly install resolved     keywords: [ 'ast', 'lint', 'javascript', 'ecmascript', 'espree' ],
+85 silly install resolved     license: 'MIT',
+85 silly install resolved     engines: { node: '>=0.10' },
+85 silly install resolved     gitHead: '54600a38baded690821d6efb060c6c51ad18cefe',
+85 silly install resolved     _id: 'eslint@1.6.0',
+85 silly install resolved     _shasum: '108a2d5ccb5a218cf7270f256cc2962518fa0c96',
+85 silly install resolved     _from: 'eslint@*',
+85 silly install resolved     _npmVersion: '1.4.28',
+85 silly install resolved     _npmUser: { name: 'nzakas', email: 'nicholas@nczconsulting.com' },
+85 silly install resolved     maintainers: [ [Object], [Object] ],
+85 silly install resolved     dist:
+85 silly install resolved      { shasum: '108a2d5ccb5a218cf7270f256cc2962518fa0c96',
+85 silly install resolved        tarball: 'http://registry.npmjs.org/eslint/-/eslint-1.6.0.tgz' },
+85 silly install resolved     directories: {},
+85 silly install resolved     _resolved: 'https://registry.npmjs.org/eslint/-/eslint-1.6.0.tgz' } ]
+86 info install babel-eslint@4.1.3 into /usr/local/lib
+87 info install eslint@1.6.0 into /usr/local/lib
+88 info installOne babel-eslint@4.1.3
+89 verbose installOne of babel-eslint to /usr/local/lib not in flight; installing
+90 info installOne eslint@1.6.0
+91 verbose installOne of eslint to /usr/local/lib not in flight; installing
+92 verbose lock using /Users/MyDrive/.npm/_locks/eslint-73063478b74e4f91.lock for /usr/local/lib/node_modules/eslint
+93 verbose lock using /Users/MyDrive/.npm/_locks/babel-eslint-8ad2cd40d5589b4b.lock for /usr/local/lib/node_modules/babel-eslint
+94 silly install write writing eslint 1.6.0 to /usr/local/lib/node_modules/eslint
+95 silly install write writing babel-eslint 4.1.3 to /usr/local/lib/node_modules/babel-eslint
+96 verbose unbuild lib/node_modules/babel-eslint
+97 verbose unbuild lib/node_modules/eslint
+98 silly gentlyRm /usr/local/lib/node_modules/babel-eslint is being purged from base /usr/local
+99 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/babel-eslint
+100 verbose tar unpack /Users/MyDrive/.npm/babel-eslint/4.1.3/package.tgz
+101 verbose tar unpacking to /usr/local/lib/node_modules/babel-eslint
+102 silly gentlyRm /usr/local/lib/node_modules/babel-eslint is being purged
+103 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/babel-eslint
+104 silly gunzTarPerm modes [ '755', '644' ]
+105 error tar.unpack untar error /Users/MyDrive/.npm/babel-eslint/4.1.3/package.tgz
+106 verbose unlock done using /Users/MyDrive/.npm/_locks/babel-eslint-8ad2cd40d5589b4b.lock for /usr/local/lib/node_modules/babel-eslint
+107 info preuninstall eslint@1.5.1
+108 info uninstall eslint@1.5.1
+109 verbose unbuild rmStuff eslint@1.5.1 from /usr/local/lib/node_modules
+110 silly gentlyRm /usr/local/bin/eslint is being gently removed
+111 silly gentlyRm verifying /usr/local is an npm working directory
+112 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+113 silly gentlyRm deletion target /usr/local/bin/eslint is under /usr/local
+114 verbose gentlyRm vacuuming from /usr/local/bin/eslint up to /usr/local
+115 silly vacuum-fs removing /usr/local/bin/eslint
+116 silly vacuum-fs quitting because other entries in /usr/local/bin
+117 info postuninstall eslint@1.5.1
+118 silly gentlyRm /usr/local/lib/node_modules/eslint is being purged from base /usr/local
+119 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/eslint
+120 silly vacuum-fs purging /usr/local/lib/node_modules/eslint
+121 verbose unlock done using /Users/MyDrive/.npm/_locks/eslint-73063478b74e4f91.lock for /usr/local/lib/node_modules/eslint
+122 verbose fstream_path /usr/local/lib/node_modules/babel-eslint
+123 verbose fstream_type Directory
+124 verbose fstream_class DirWriter
+125 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/babel-eslint'
+125 verbose stack     at Error (native)
+126 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+126 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+126 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+127 verbose cwd /Users/MyDrive/GitHub/firesky-native
+128 error Darwin 15.0.0
+129 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "eslint" "babel-eslint"
+130 error node v4.1.1
+131 error npm  v2.14.4
+132 error path /usr/local/lib/node_modules/babel-eslint
+133 error code EACCES
+134 error errno -13
+135 error syscall mkdir
+136 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/babel-eslint'
+136 error     at Error (native)
+136 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/babel-eslint']
+136 error   errno: -13,
+136 error   code: 'EACCES',
+136 error   syscall: 'mkdir',
+136 error   path: '/usr/local/lib/node_modules/babel-eslint',
+136 error   fstream_type: 'Directory',
+136 error   fstream_path: '/usr/local/lib/node_modules/babel-eslint',
+136 error   fstream_class: 'DirWriter',
+136 error   fstream_stack:
+136 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+136 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+136 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+137 error Please try running this command again as root/Administrator.
+138 verbose exit [ -13, true ]
+139 verbose unbuild lib/node_modules/babel-eslint
+140 silly gentlyRm /usr/local/lib/node_modules/babel-eslint is being purged from base /usr/local
+141 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/babel-eslint
+142 verbose unbuild lib/node_modules/eslint
+143 info preuninstall eslint@1.5.1
+144 info uninstall eslint@1.5.1
+145 verbose unbuild rmStuff eslint@1.5.1 from /usr/local/lib/node_modules
+146 silly gentlyRm /usr/local/bin/eslint is being gently removed
+147 silly gentlyRm verifying /usr/local is an npm working directory
+148 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+149 silly gentlyRm deletion target /usr/local/bin/eslint is under /usr/local
+150 verbose gentlyRm vacuuming from /usr/local/bin/eslint up to /usr/local
+151 info postuninstall eslint@1.5.1
+152 silly gentlyRm /usr/local/lib/node_modules/eslint is being purged from base /usr/local
+153 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/eslint
+154 silly vacuum-fs purging /usr/local/lib/node_modules/eslint
+155 error error rolling back Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/eslint'
+155 error error rolling back     at Error (native)
+155 error error rolling back  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/eslint']
+155 error error rolling back   errno: -13,
+155 error error rolling back   code: 'EACCES',
+155 error error rolling back   syscall: 'rmdir',
+155 error error rolling back   path: '/usr/local/lib/node_modules/eslint' }

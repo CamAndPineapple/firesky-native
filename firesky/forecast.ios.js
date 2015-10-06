@@ -1,6 +1,7 @@
 'use strict';
 
 let React = require('react-native');
+let styles = require('./css/ForecastCSS.js');
 
 var {
     StyleSheet,
@@ -17,8 +18,8 @@ class Forecast extends Component {
 
     render() {
         return (
-            <View>
-            <Text> Test </Text>
+            <View style={styles.masterContainer}>
+            <Text> {this.props.myElement} </Text>
             </View>
         );
     }

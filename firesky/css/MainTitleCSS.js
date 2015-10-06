@@ -29,7 +29,7 @@ let styles = StyleSheet.create({
     backgroundColor: '#FF5722',
     height: 40,
     width: 150,
-    
+
   },
   searchButtonText: {
     alignSelf: 'center',
