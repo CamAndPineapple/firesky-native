@@ -16,10 +16,11 @@ class Forecast extends Component {
         super(props);
     }
 
+
     render() {
         return (
             <View style={styles.masterContainer}>
-            <Text> {this.props.myElement} </Text>
+            <Text> {this.props.city} </Text>
             </View>
         );
     }
