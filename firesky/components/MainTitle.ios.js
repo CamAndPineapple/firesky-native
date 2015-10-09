@@ -25,7 +25,15 @@ class MainTitle extends Component {
   }
 
   componentDidMount() {
+    this.getUserCoordinates();
+  }
 
+  componentWillUnmount() {
+    navigator.geolocation
+      .clearWatch(this.watchID);
+  }
+
+  getUserCoordinates() {
     navigator.geolocation
       .getCurrentPosition((initialPosition) => {
         this.latitude = JSON.stringify(initialPosition.coords.latitude);
@@ -39,15 +47,9 @@ class MainTitle extends Component {
       .watchPosition((lastPosition) => {
         this.setState({lastPosition});
       });
-
   }
 
-  componentWillUnmount() {
-    navigator.geolocation
-      .clearWatch(this.watchID);
-  }
-
-  fetchData() {
+  callAPI() {
 
     this.REQUEST_URL = 'https://api.wunderground.com/api/' + this.API_KEY_WU + '/geolookup/conditions/astronomy/forecast/q/' + this.latitude + ',' + this.longitude + '.json';
     fetch(this.REQUEST_URL).then((response) => response.json()).then((responseData) => {
@@ -55,23 +57,16 @@ class MainTitle extends Component {
         city: responseData.location.city
       });
 
-      AlertIOS.alert('title', 'city: ' + this.state.city);
-
+      this.props.navigator.push({
+        title: 'Forecast',
+        component: Forecast,
+        passProps: {city: this.state.city}
+      });
     }).done();
   }
 
   getForecast() {
-
-    this.fetchData();
-
-    this.props
-      .navigator
-      .push({
-        title: 'Forecast',
-        component: Forecast,
-        passProps: {}
-      });
-
+    this.callAPI();
   }
 
   render() {

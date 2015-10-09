@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react-native');
-var MainTitle = require('./MainTitle.ios');
+var MainTitle = require('./components/MainTitle.ios');
 
 var {
   AppRegistry,

@@ -2,9 +2,7 @@
 
 var React = require('react-native');
 
-var {
-  StyleSheet,
-} = React;
+var {StyleSheet} = React;
 
 let styles = StyleSheet.create({
   masterContainer: {
@@ -21,32 +19,30 @@ let styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   searchContainer: {
-   alignSelf: 'center',
+    alignSelf: 'center'
   },
   searchButton: {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FF5722',
     height: 40,
-    width: 150,
-
+    width: 150
   },
   searchButtonText: {
     alignSelf: 'center',
     color: 'white',
-    fontWeight: "600",
+    fontWeight: '600'
   },
   backgroundImage: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'center'
   },
   searchInput: {
     height: 40,
     width: 200,
     borderColor: 'gray',
     borderWidth: 1,
-    alignSelf: 'center',
-
+    alignSelf: 'center'
   }
 });
 
