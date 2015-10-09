@@ -12,12 +12,10 @@ var {
 var firesky = React.createClass({
   render: function() {
     return (
-      <NavigatorIOS
-                 style={styles.container}
-                 initialRoute={{
-             title: 'Search',
-             component: MainTitle
-         }}/>
+      <NavigatorIOS initialRoute={{
+        title: 'Search',
+        component: MainTitle
+      }} style={styles.container}/>
     );
   }
 });
