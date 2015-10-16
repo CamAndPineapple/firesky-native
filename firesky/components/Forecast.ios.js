@@ -8,6 +8,8 @@ var {StyleSheet, View, Text, Component, Image} = React;
 class Forecast extends Component {
   constructor(props) {
     super(props);
+
+
   }
 
   render() {
@@ -18,6 +20,7 @@ class Forecast extends Component {
         }} style={styles.backgroundImage}>
         <View style={styles.variablesContainer}>
           <Text style={styles.labelText}>City: <Text style={styles.variableText}>{this.props.city}</Text> </Text>
+          <Text style={styles.labelText}>Cloud Coverage: <Text style={styles.variableText}>{this.props.clouds} %</Text> </Text>
         </View>
         </Image>
       </View>

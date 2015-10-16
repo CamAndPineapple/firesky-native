@@ -20,7 +20,9 @@ class MainTitle extends Component {
       initialPosition: 'unknown',
       lastPosition: 'unknown',
       city: 'unknown city',
-      state: ' '
+      state: 'unknwon state',
+      clouds: 'unknown percentage',
+      isFinished: false
     };
   }
 
@@ -49,24 +51,47 @@ class MainTitle extends Component {
       });
   }
 
-  callAPI() {
+makeAPIRequests() {
 
-    this.REQUEST_URL = 'https://api.wunderground.com/api/' + this.API_KEY_WU + '/geolookup/conditions/astronomy/forecast/q/' + this.latitude + ',' + this.longitude + '.json';
-    fetch(this.REQUEST_URL).then((response) => response.json()).then((responseData) => {
+   this.REQUEST_WUNDERGROUND = 'https://api.wunderground.com/api/' + this.API_KEY_WU + '/geolookup/conditions/astronomy/forecast/q/' + this.latitude + ',' + this.longitude + '.json';
+  this.REQUEST_FORECASTIO = 'https://api.forecast.io/forecast/' + this.API_KEY_FIO + '/' + this.latitude + ',' + this.longitude;
+
+  fetch(this.REQUEST_WUNDERGROUND).then((response) => response.json()).then((responseData) => {
+    this.setState({
+      city: responseData.location.city
+    });
+  }).then(() => {
+    fetch(this.REQUEST_FORECASTIO).then((response) => response.json()).then((responseData) => {
       this.setState({
-        city: responseData.location.city
+        clouds: responseData.currently.cloudCover,
+        isFinished: true
       });
+    }).done(() => {
+      this.pushAPI();
+    });
+  }).done();
 
-      this.props.navigator.push({
+}
+
+pushAPI() {
+  this.props.navigator.push({
         title: 'Forecast',
         component: Forecast,
-        passProps: {city: this.state.city}
+        passProps: {
+          city: this.state.city,
+          clouds: this.state.clouds,
+        }
       });
-    }).done();
-  }
+}
 
-  getForecast() {
-    this.callAPI();
+
+
+
+
+
+  _getLocationButtonPress() {
+    this.makeAPIRequests();
+
   }
 
   render() {
@@ -79,7 +104,7 @@ class MainTitle extends Component {
             FIRESKY
           </Text>
           <View style={styles.searchContainer}>
-            <TouchableHighlight onPress={() => this.getForecast()}>
+            <TouchableHighlight onPress={() => this._getLocationButtonPress()}>
               <View style={styles.searchButton}>
                 <Text style={styles.searchButtonText}>
                   Get Forecast
