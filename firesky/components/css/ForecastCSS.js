@@ -17,6 +17,7 @@ let styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   variablesContainer: {
     height: 200,
     width: 300,

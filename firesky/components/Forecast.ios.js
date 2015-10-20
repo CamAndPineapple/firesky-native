@@ -21,6 +21,11 @@ class Forecast extends Component {
         <View style={styles.variablesContainer}>
           <Text style={styles.labelText}>City: <Text style={styles.variableText}>{this.props.city}</Text> </Text>
           <Text style={styles.labelText}>Cloud Coverage: <Text style={styles.variableText}>{this.props.clouds} %</Text> </Text>
+          <Text style={styles.labelText}>illumination: <Text style={styles.variableText}>{this.props.illumination} %</Text> </Text>
+          <Text style={styles.labelText}>Moon Phase: <Text style={styles.variableText}>{this.props.moonPhase} </Text> </Text>
+          <Text style={styles.labelText}>Moon Age: <Text style={styles.variableText}>{this.props.moonAge} </Text> </Text>
+          <Text style={styles.labelText}>Moon Clipped: <Text style={styles.variableText}>{this.props.moonClipped} </Text> </Text>
+          <Text style={styles.labelText}>Weighted Average: <Text style={styles.variableText}>{this.props.weightedAvg}</Text> </Text>
         </View>
         </Image>
       </View>
