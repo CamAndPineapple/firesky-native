@@ -20,7 +20,7 @@ class MainTitle extends Component {
       initialPosition: 'unknown',
       lastPosition: 'unknown',
       city: 'unknown city',
-      state: 'unknwon state',
+      state: 'unknown state',
       clouds: 'unknown percentage',
       illumination: 'unknown illum',
       moonPhase: 'unknown phase',
@@ -165,6 +165,7 @@ class MainTitle extends Component {
         component: Forecast,
         passProps: {
           city: this.state.city,
+          state: this.state.state,
           clouds: this.state.clouds,
           illumination: this.state.illumination,
           moonPhase: this.state.moonPhase,

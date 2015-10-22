@@ -28,24 +28,31 @@ let styles = StyleSheet.create({
     height: 200,
     width: 300,
     padding: 15,
+    borderRadius: 3,
     backgroundColor: 'rgba(0,0,0,.68)',
   },
   moonPhaseContainer: {
-    alignItems: 'center',
     margin: 5,
     height: 200,
     width: 300,
+    padding: 15,
+    borderRadius: 3,
     backgroundColor: 'rgba(0,0,0,.68)',
   },
-
+  percentageBar: {
+    height: 20,
+    width: 300,
+    marginBottom: 10,
+    backgroundColor: 'rgba(0,0,0,.68)',
+  },
   labelText: {
     color: '#00D8FF',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: 1,
   },
   variableText: {
     color: '#fff',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: 2,
   }
 
